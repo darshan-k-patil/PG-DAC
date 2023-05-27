@@ -1,0 +1,68 @@
+<html>
+    <body>
+        <head>
+            <title>Question 5</title>
+        </head>
+        <form >
+            <table border="1" style="background-color: lightpink;" cellspacing="0px">
+                <tbody>
+                    <tr>
+                        <td><label for="nm">Name</label></td>
+                        <td><input type="text" name="nm" id="nm" required autofocus minlength="3"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="empcode">Employee Code</label></td>
+                        <td><input type="text" name="empcode" id="empcode" size="1%"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="dept">Department</label></td>
+                        <td><input type="radio" name="dept" id="ADMIN" value="ADMIN"><label for="ADMIN">ADMIN</label>
+                            <br>
+                            <input type="radio" name="dept" id="HR" value="HR"><label for="HR">HR</label>
+                            <br>
+                            <input type="radio" name="dept" id="TECH" value="TECH"><label for="TECH">TECHNICAL</label>
+                            <br>
+                            <input type="radio" name="dept" id="ACC" value="ACC"><label for="ACC">ACCOUNT</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="doj"></label>Date of Joining</td>
+                        <td><input type="text" name="doj" id="doj" size="1%"> /
+                            <input type="text" name="doj" id="doj" size="1%"> /
+                            <input type="text" name="doj" id="doj" size="1%">
+                            <pre> dd      mm      yyyy </pre> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="addr">Address</label></td>
+                        <td><textarea name="addr" id="addr" cols="30" rows="5"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tpa">Training programs Attended</label></td>
+                        <td><input type="checkbox" name="tpa" id="html">HTML/DHTML</label>
+                        <br>
+                        <input type="checkbox" name="tpa" id="java">JAVA</label>
+                        <br>
+                        <input type="checkbox" name="tpa" id="client">CLIENT/SERVER</label>
+                        <br>
+                        <input type="checkbox" name="tpa" id=".net">.NET</label>
+                         </td>
+                    </tr>
+                    <tr>
+                        <td><label for="tpna">Training Programs need to attend</label></td>
+                        <td><select name="tpna" id="tpna">
+                            <option value="test"><label>---select---</label></option>
+                            <option value="js"><label for="js">JAVASCRIPT</label></option>
+                            <option value="k"><label for="k">JSTRUTS</label></option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td>Send the information at</td>
+                        <td><a href="mailto:empinfo@patni.com">mailto:empinfo@patni.com</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        
+    </body>
+</html>

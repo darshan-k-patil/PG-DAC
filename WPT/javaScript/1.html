@@ -1,0 +1,80 @@
+<!-- 1. Write a program to accept three positive numbers and output
+     the largest of them. -->
+<html>
+    <head>
+        <style>
+            span
+            {
+                color: red;
+            }
+            fieldset
+            {
+                width: 45%; 
+                margin-left: 30%;
+                margin-top: 10%;
+            }
+        </style>
+        <script>
+            function validateData(numid,errmsg)
+            {
+                var a = document.getElementById(numid).value;
+                if(a==="" || isNaN(a))
+                {
+                    document.getElementById(errmsg).innerHTML="please enter numeric data";
+                    return false;
+                }
+                document.getElementById(errmsg).innerHTML="";
+                return true;
+            }
+            function validateNumbers()
+            {
+                var flag1 = validateData("n1","err1");
+                var flag2 = validateData("n2","err2");
+                var flag3 = validateData("n3","err3");
+                if(flag1 && flag2 && flag3)
+                {
+                    largestNumber();
+                }
+                // else{
+                //     alert("data is invalid");
+                // }
+            }
+            function largestNumber()
+            {
+                var a = parseInt(document.getElementById("n1").value);
+                var b = parseInt(document.getElementById("n2").value);
+                var c = parseInt(document.getElementById("n3").value);
+                var l = Math.max(a,b,c);
+                //document.write("Largest Number : "+l); //ans on same page but overrides the page
+                document.getElementById("mydiv").innerHTML="Largest Number : "+l;
+                document.getElementById("result").value=l;
+            }
+        </script>
+    </head>
+    <body>
+        <fieldset>
+            <form name="frm">
+                Number 1: <input type="text" name="num1" id="n1" autofocus>
+                <span>*</span>
+                <span id="err1"></span>
+                <br>
+                Number 2: <input type="text" name="num2" id="n2">
+                <span>*</span>
+                <span id="err2"></span>
+                <br>
+                Number 3: <input type="text" name="num3" id="n3">
+                <span>*</span>
+                <span id="err3"></span>
+                <br>
+                result: <input type="text" name="result" id="result" disabled>
+                <br>
+                <button type="button" name="larg" id="larg" value="larg" onclick="validateNumbers()">
+                    Largest Number
+                </button>
+            </form>
+            <div id="mydiv">
+    
+            </div>
+        </fieldset>
+    </body>
+</html>

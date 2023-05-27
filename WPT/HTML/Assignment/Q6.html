@@ -1,0 +1,99 @@
+<html>
+    <body style="border: groove; border-color: rgb(91, 178, 212);">
+        <head>
+            <title>Internet Usage Survey</title>
+        </head>
+        <h1>Internet Usage Survey</h1>
+        <br>
+        <p style="margin-left: 20;">
+            This survey is being conducted to help identify the Internet usage patterns of our customers.
+             <br>
+            Please take a few moments to complete and submit this short form. Thank you for your cooperation.
+        </p>
+        <form>
+            <table cellspacing="40px">
+                <tbody>
+                    <tr>
+                        <td> <label for="int">What type of Internet connection do you have? <br>(Select One)</label></td>
+                        <td><select name="int" id="int" size="4">
+                            <option value="dial"><label for="dial">Dial-up</label></option>
+                            <option value="dsl"><label for="dsl">DSL</label></option>
+                            <option value="hsc"><label for="hsc">High Speed Cable</label></option>
+                            <option value="o"><label for="o">Other</label></option>
+                        </select> </td>
+                    </tr>
+                    <tr>
+                        <td><label for="comp" >What type of computer do you use most at home?</label></td>
+                        <td><input type="radio" name="comp" id="desk" value="desk"><label for="desk">Desktop</label> 
+                            <input type="radio" name="comp" id="lap" value="lap"><label for="lap">Laptop</label> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="res" >How would you describe your main reason for using the Internet?</label></td>
+                        <td><input type="radio" name="res" id="work" value="work"><label for="work">To do work-related activities</label> 
+                            <br>
+                            <input type="radio" name="res" id="school" value="school"><label for="school">To do school-related activities</label>
+                            <br>
+                            <input type="radio" name="res" id="pr" value="pr"><label for="pr">For entertainment purpose</label>
+                            <br>
+                            <input type="radio" name="res" id="act" value="act"><label for="act">Other activities</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><fieldset>
+                            <legend>Types of sites visited</legend>
+                            <p>What types of web sites do you access most often?
+                                <br>
+                                Check all thet apply.
+                            </p>
+                            <input type="checkbox">self Improvement
+                            <br>
+                            <input type="checkbox">Entertainment
+                            <br>
+                            <input type="checkbox">News and Sports
+                            <br>
+                            <input type="checkbox">Reference
+                            <br>
+                            <input type="checkbox">Email
+                        </fieldset> 
+                        </td>
+                        <td valign="top"><fieldset>
+                            <legend>Time spent using Internet</legend>
+                            <p>During an average week, how long do you spend online?
+                            </p>
+                            <input type="radio">0-3 Hours
+                            <br>
+                            <input type="radio">4-6 Hours
+                            <br>
+                            <input type="radio">7-10 Hours
+                            <br>
+                            <input type="radio">11-14 Hours
+                            <br>
+                            <input type="radio">15+ Hours
+                        </fieldset></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Please comment on your options concerning Internet privarcy and safety.
+                         <br> <textarea cols="100" rows="10" ></textarea></td> 
+                     </tr>
+                     <tr>
+                         <td><label for="nm">First Name: </label><input type="text" name="nm" id="nm"></td>
+                         <td><label for="ln">Last Name: </label><input type="text" name="ln"  id="ln"></td>
+                     </tr>
+                     <tr>
+                        <td><label for="a">Age: </label><input type="text" name="a"  id="a"></td>
+                        <td><label for="zip">Zip Code: </label><input type="text" name="zip"  id="zip"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="submit" name="bt" id="bt" value="login" style="float: right;">Click to Submit</button>
+                        </td>
+                        <td>
+                            <button type="reset" name="cl" id="cl" value="cts" style="float: left;">Clear Form</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </body>
+</html>

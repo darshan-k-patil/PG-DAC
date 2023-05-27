@@ -1,0 +1,69 @@
+<!-- 2. Accept an integer value and a message 
+    from user and print the message that many 
+    number of times. -->
+<html>
+    <head>
+        <style>
+            span{
+                color: red;
+            }
+            fieldset
+            {
+                width: 45%; 
+                margin-left: 30%;
+                margin-top: 10%;
+            }
+        </style>
+        <script>
+            function validateData(numid,errmsg)
+            {
+                var a = document.getElementById(numid).value;
+                if(a==="" || isNaN(a))
+                {
+                    document.getElementById(errmsg).innerHTML="please enter numeric data";
+                    return false;
+                }
+                document.getElementById(errmsg).innerHTML=""
+                return true;
+            }
+            function validateNumber()
+            {
+                var flag1 = validateData("n","err1");
+                if(flag1)
+                {
+                    message();
+                }
+            }
+            function message()
+            {
+                var msg = document.getElementById("m").value;
+                var num = parseInt(document.getElementById("n").value);
+                for(var i=0; i<num; i++)
+                {
+                    document.getElementById("mydiv").innerHTML += msg +'<br/>';
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <fieldset>
+            <form name="frm">
+                Number:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                        <input type="text" name="num" id="n" autofocus>
+                <span>*</span>
+                <span id="err1"></span>
+                <br>
+                Message:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                        <input type="text" name="msg" id="m">
+                <span>*</span>
+                <span id="err2"></span>
+                <br>
+                <button type="button" name="print" id="print" value="print" onclick="validateNumber()">
+                    Print
+                </button>
+            </form>
+            <div id="mydiv">
+            </div>
+        </fieldset>
+    </body>
+</html>

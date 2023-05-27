@@ -1,0 +1,36 @@
+<!-- 1. Write a program to accept three positive numbers and output
+     the largest of them. -->
+     <html>
+        <head>
+            <script>
+                function largestNumber()
+                {
+                    var a=parseInt(document.getElementById("n1").value);
+                    var b=parseInt(document.getElementById("n2").value);
+                    var c=parseInt(document.getElementById("n3").value);
+                    var l=Math.max(a,b,c);
+                    //document.write("Largest Number : "+l); //ans on same page but overrides the page
+                    document.getElementById("mydiv").innerHTML="Largest Number : "+l;
+                    document.getElementById("result").value=l;
+                }
+            </script>
+        </head>
+        <body>
+            <form name="frm">
+                Number 1: <input type="text" name="num1" id="n1">
+                <br>
+                Number 2: <input type="text" name="num2" id="n2">
+                <br>
+                Number 3: <input type="text" name="num3" id="n3">
+                <br>
+                result: <input type="text" name="result" id="result" disabled>
+                <br>
+                <button type="button" name="larg" id="larg" value="larg" onclick="largestNumber()">
+                    Largest Number
+                </button>
+            </form>
+            <div id="mydiv">
+    
+            </div>
+        </body>
+    </html>

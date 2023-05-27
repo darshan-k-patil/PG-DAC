@@ -1,0 +1,66 @@
+<!-- 5. Write a program to print the multiplication table of a given number up to 10 multiples. Eg for number 2,
+output should be like -->
+<html>
+    <head>
+        <style>
+            span{
+                color: red;
+            }
+            fieldset{
+                width: 30%; 
+                margin-left: 30%;
+            }
+            button{
+                margin-left: 15%;
+            }
+        </style>
+        <script>
+            function validateData(numid,errid)
+            {
+                var a = document.getElementById(numid).value;
+                if(a==="" || isNaN(a))
+                {
+                    document.getElementById(errid).innerHTML="please enter numeric data"
+                    return false;
+                }
+                document.getElementById(errid).innerHTML="";
+                return true;
+            }
+            function table()
+            {
+                var a = parseInt(document.getElementById("num").value);
+                for(var i=1; i<=10; i++)
+                {
+                     
+                    document.getElementById("mydiv").innerHTML+=a+"*"+i+"="+(a*i)+"\n";
+                }
+            }
+            function validateNumber()
+            {
+                flag = validateData("num","err");
+                if(flag)
+                {
+                    table();
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <fieldset>
+            <form name="frm">
+                <label for="num">Enter Number : </label>
+                <input type="text" name="num" id="num" size="5%">
+                <span>*</span>
+                <span id="err" ></span>
+                <br><br>
+                <button type="button" name="btn" id="btn" onclick="validateNumber()">Print</button>
+                <br><br>
+                <label for="mydiv">Table : </label>
+                <textarea name="mydiv" id="mydiv" cols="30" rows="10"></textarea>
+            </form>
+            <!-- <div id="mydiv">
+
+            </div> -->
+        </fieldset>
+    </body>
+</html>

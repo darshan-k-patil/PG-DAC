@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <style>
+            td{
+                padding-bottom: 20px;
+            }
+            td:first-child{
+                text-align: right;
+            }
+            table{
+                margin-left: 30%;
+            }
+        </style>
+    </head>
+    <body style="background-color: rgb(55, 116, 167); color: white;">
+        <fieldset>
+            <legend>Registration Details</legend>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="uni">University: </label>
+                        </td>
+                        <td>
+                            <input type="text" name="uni" id="uni">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="inst">Institute: </label>
+                        </td>
+                        <td>
+                            <input type="text" name="inst" id="inst">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="br">Branch: </label>
+                        </td>
+                        <td>
+                            <select name="br" id="br">
+                            <option value="a">----select----</option>
+                            <option value="pune">PUNE</option>
+                            <option value="mumbai">MUMBAI</option>
+                        </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="deg">Degree: </label>
+                        </td>
+                        <td>
+                            <select name="deg" id="deg">
+                            <option value="a">----select----</option>
+                            <option value="be">BE</option>
+                            <option value="bsc">BSC</option> 
+                        </select>
+                        &nbsp;&nbsp;
+                        <input type="radio" name="deg" id="p" value="p">&nbsp;<label for="p">Pursuing</label>
+                        <input type="radio" name="deg" id="c" value="c">&nbsp;<label for="c">Completed</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="avg">Average: </label>
+                        </td>
+                        <td>
+                            <input type="number" name="avg" id="avg" min="0" max="10">
+                            &nbsp;&nbsp;
+                            <label for="up">Upto: </label>
+                            &nbsp;
+                            <input type="number" name="up" id="up" min="0" max="10">
+                            <label for="up">Th Semester</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="exp">Experience: </label>
+                        </td>
+                        <td>
+                            <input type="number" name="exp" id="exp" min="0" max="50">
+                            <label for="exp">Years</label>
+                        </td>       
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="blog">Your Website or Blog: </label>
+                        </td>
+                        <td>
+                            <input type="text" name="blog" id="blog" placeholder="http://">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>  
+        </fieldset>
+    </body>
+</html>

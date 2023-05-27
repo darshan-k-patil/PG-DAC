@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <style>
+            .black{
+                background-color: black;
+                border-radius: 5px
+            }
+            td:first-child{
+                text-align: right;
+            }
+            table{
+                margin-left: 30%;
+            }
+            td{
+                padding-bottom: 20px;
+            }
+            fieldset{
+                border-radius: 15px; 
+                border-color: blue;
+            }
+            body{
+                background-color: black; 
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <fieldset>
+            <legend>
+                <input type="text" placeholder="Name and address" style="background-color: blue; border-radius: 5px; border-color: blue;">
+            </legend>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="ssn">SSN: </label>
+                        </td>
+                        <td>
+                            <input type="text" name="ssn" id="ssn" class="black">
+                        </td>
+                        <td>
+                            <input type="text" name="ssn" id="nm" placeholder="Fill in name and address" style="background-color: blue; border-radius: 5px; border-color: blue;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="fn">Full name: </label>
+                        </td>
+                        <td>
+                            <input type="text" name="fn" id="fn" class="black">
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="sn">Street and number: </label>
+                        </td>
+                        <td>
+                            <input type="text" name="sn" id="sn" class="black">
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="pc">Postal code: </label>
+                        </td>
+                        <td>
+                            <input type="text" name="pc" id="pc" class="black">
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="city">City: </label>
+                        </td>
+                        <td>
+                            <input type="text" name="city" id="city" class="black">
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>
+                <input type="text" placeholder="Username and password" style="background-color: blue; border-radius: 5px; border-color: blue;">
+            </legend>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="un">Username: </label>
+                        </td>
+                        <td>
+                            <input type="text" name="un" id="un" class="black">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="ps">Password: </label>
+                        </td>
+                        <td>
+                            <input type="text" name="ps" id="ps" class="black">
+                            <br>
+                            <input type="checkbox" name="ps" id="sp">
+                            <label for="sp">show password</label>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <br> 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" placeholder="Register" style="border-radius: 15px; border-color: blue;background-color: blue;" size="4">
+    </body>
+</html>

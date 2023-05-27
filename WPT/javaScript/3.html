@@ -1,0 +1,73 @@
+<!-- 3. Write a function to list all even numbers less than or equal to the number n. Take the value of n as input
+from user. Use while loop -->
+<html>
+    <head>
+        <style>
+            span{
+                color: red;
+            }
+            fieldset{
+                width: 45%; 
+                margin-left: 30%;
+                margin-top: 10%;
+            }
+            button{
+                margin-left: 30%;
+            }
+        </style>
+        <script>
+            function validateData(numid,errmsg)
+            {
+                var a = document.getElementById(numid).value;
+                if(a==="" || isNaN(a))
+                {
+                    document.getElementById(errmsg).innerHTML="Please enter numeric data";
+                    return false;
+                }
+                document.getElementById(errmsg).innerHTML="";
+                return true;
+            }
+            function validNumber()
+            {
+                flag = validateData("number","err1")
+                if(flag)
+                {
+                    evenNumbers();
+                }
+            }
+            function evenNumbers()
+            {
+                var e = parseInt(document.getElementById("number").value);
+                var n = 0;
+                document.getElementById("mydiv").innerHTML = "Even Numbers are : <br>"
+                while(n<=e)
+                {
+                    if(n%2==0)
+                    {
+                        document.getElementById("mydiv").innerHTML += n +"<br>";    
+                    }
+                    n++;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <fieldset>
+            <form name="frm">
+                <label for="number">Enter Number : </label>
+                <input type="text" name="number" id="number" autofocus>
+                <span>*</span>
+                <span id="err1" ></span>
+                <br>
+                <br>
+                <button type="button" name="btn" id="btn" value="btn" onclick="validNumber()">
+                Submit
+                </button>
+            </form>
+            <div id="mydiv">
+                
+                <br>
+            </div>
+        </fieldset>
+    </body>
+</html>
